@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git repo and clean') {
             steps {
-                bat  "rmdir /s /q  SpringBoot "
+               // bat  "rmdir /s /q  AwsTwoWheeler "
                 bat "git clone https://github.com/Sarathkumara2000/AwsTwoWheeler.git"
                 bat "mvn clean -f SpringBoot"
             }
